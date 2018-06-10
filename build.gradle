@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'extratorJava'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "com.opencsv:opencsv:4.0"
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+jar{
+    manifest {
+        attributes("Main-Class": 'extrator.Main')
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
