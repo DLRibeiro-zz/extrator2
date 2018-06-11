@@ -120,10 +120,10 @@ public class ExtractorRunner implements Runnable {
     }
     InputStream inputStream2 = getClass().getClassLoader()
         .getResourceAsStream("componentWords.txt");
-    BufferedReader buffReader2 = new BufferedReader(new InputStreamReader(inputStream));
+    BufferedReader buffReader2 = new BufferedReader(new InputStreamReader(inputStream2));
     List<String> listComponentWords = new ArrayList<>();
     String componentWord = "";
-    while ((componentWord = buffReader.readLine()) != null) {
+    while ((componentWord = buffReader2.readLine()) != null) {
       listComponentWords.add(componentWord);
     }
     this.componentExtractor = new ComponentExtractor(listComponentWords, listStopWords);

@@ -42,7 +42,10 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     List<String> javaFiles = getCleanJavaFiles(fileList);
     List<String> components = new ArrayList<>();
     for (String javaFile : javaFiles) {
-      components.add(this.extractComponent(javaFile));
+      String component = this.extractComponent(javaFile);
+      if(!component.equals("")){
+        components.add(component);
+      }
     }
     return components;
   }
@@ -80,6 +83,9 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     String component = file;
     for (String componentWord : this.componentWords) {
       component = component.replace(componentWord, "");
+    }
+    if(component.equals(file)){
+      component = "";
     }
     return component;
   }

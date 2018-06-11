@@ -9,14 +9,14 @@ public class PackageExtractor implements Extractor<MergeScenario> {
   @Override
   public Metrics extract(MergeScenario mergeScenario) {
     Metrics metrics = null;
-    List<String> leftJavaFiles = this.getJavaFiles(mergeScenario.getParent1Files());
-    List<String> rightJavaFiles = this.getJavaFiles(mergeScenario.getParent2Files());
+    List<String> leftFiles = this.getFiles(mergeScenario.getParent1Files());
+    List<String> rightFiles = this.getFiles(mergeScenario.getParent2Files());
     List<String> leftPackage = new ArrayList<>();
     List<String> rightPackage = new ArrayList<>();
-    for(String javaFile : leftJavaFiles){
+    for(String javaFile : leftFiles){
       leftPackage.add(this.getPackage(javaFile));
     }
-    for(String javaFile: rightJavaFiles){
+    for(String javaFile: rightFiles){
       rightPackage.add(this.getPackage(javaFile));
     }
     int commonPackageCount = this.checkCommonPackages(leftPackage, rightPackage);
@@ -25,15 +25,13 @@ public class PackageExtractor implements Extractor<MergeScenario> {
     return metrics;
   }
 
-  private List<String> getJavaFiles(String fileList) {
-    List<String> javaFiles = new ArrayList<>();
+  private List<String> getFiles(String fileList) {
+    List<String> files = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]", "").trim().split("@");
     for (String file : allFiles) {
-      if (file.endsWith(".java")) {
-        javaFiles.add(file);
-      }
+      files.add(file);
     }
-    return javaFiles;
+    return files;
   }
 
   private int checkCommonPackages(List<String> packagesLeft, List<String> packagesRight){
