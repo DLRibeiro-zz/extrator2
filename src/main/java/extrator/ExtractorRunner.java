@@ -44,10 +44,10 @@ public class ExtractorRunner implements Runnable {
       int index = 0;
       List<String> csvFileNames = new ArrayList<>();
       for (String csvFileName : csvFilesPaths) {
-        System.out.println(properties.get("folder"));
-        String fileName = properties.get("folder") + "/" + repoNames[index].replace("\"", "")
+        String fileName = properties.get("folder") + "/" + repoNames[index].replace("\"", "").trim()
                 + "_MergeScenarioList.csv";
         csvFileNames.add(fileName);
+        System.out.println(fileName);
         index++;
       }
       index = 0;

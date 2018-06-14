@@ -21,6 +21,8 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     String fileListRight = mergeScenario.getParent2Files();
     List<String> leftComponents = extractComponentsFromFileList(fileListsLeft);
     List<String> righComponents = extractComponentsFromFileList(fileListRight);
+    leftComponents.addAll(this.extractComponentsFromNonJava(fileListsLeft));
+    righComponents.addAll(this.extractComponentsFromNonJava(fileListRight));
     int commonSlicesCount = this.checkCommonSlices(leftComponents, righComponents);
     boolean existCommonSlices = (commonSlicesCount > 0) ? true : false;
     metrics = new ComponentMetrics(mergeScenario.getMergeCommitId(),
@@ -43,9 +45,18 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     List<String> components = new ArrayList<>();
     for (String javaFile : javaFiles) {
       String component = this.extractComponent(javaFile);
-      if(!component.equals("")){
+      if(!component.equals("") && !components.contains(component)){
         components.add(component);
       }
+    }
+    return components;
+  }
+
+  private List<String> extractComponentsFromNonJava(String fileList){
+    List<String> nonJavaFiles = this.getNonJavaFiles(fileList);
+    List<String> components = new ArrayList<>();
+    if(!nonJavaFiles.isEmpty()){
+      components.add("RESOURCE");
     }
     return components;
   }
@@ -58,6 +69,17 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
       javaFiles.set(i, javaFile);
     }
     return javaFiles;
+  }
+
+  private List<String> getNonJavaFiles(String fileList){
+    List<String> nonJavaFiles = new ArrayList<>();
+    String[] allFiles = fileList.replace("[", "").replace("]","").trim().split("@");
+    for(String file: allFiles){
+      if(!file.endsWith(".java")){
+        nonJavaFiles.add(file);
+      }
+    }
+    return nonJavaFiles;
   }
 
   private List<String> getJavaFiles(String fileList) {
