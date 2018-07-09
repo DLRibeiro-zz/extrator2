@@ -113,4 +113,19 @@ public class MergeScenario {
     this.numberOfConflicts = numberOfConflicts;
   }
 
+  String[] headerRecord = {"mergeCommitId","isMergeConflicting","filesConflictants","parent1Id","parent1Files","parent2Id","parent2Files","ancestorId","numberOfConflicts"};
+  public String[] toStringArray(){
+    String [] returnArray = new String[9];
+    returnArray[0] = this.getMergeCommitId();
+    returnArray[1] = (this.isMergeConfliting) ? "1" : "0";
+    returnArray[2] = this.getFilesConflictants();
+    returnArray[3] = this.getParent1Id();
+    returnArray[4] = this.getParent1Files();
+    returnArray[5] = this.getParent2Id();
+    returnArray[6] = this.getParent2Files();
+    returnArray[7] = this.getAncestorId();
+    returnArray[8] = "" + this.getNumberOfConflicts();
+    return returnArray;
+  }
+
 }

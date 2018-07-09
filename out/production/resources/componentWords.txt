@@ -3,11 +3,11 @@ Adapter
 IntentService
 Service
 Fragment
-BroadcastReciever
-Reciever
+BroadcastReceiver
+Receiver
 Application
 Async
-AsynTask
+AsyncTask
 Tasks
 ContentProvider
 Provider

@@ -21,8 +21,8 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     String fileListRight = mergeScenario.getParent2Files();
     List<String> leftComponents = extractComponentsFromFileList(fileListsLeft);
     List<String> righComponents = extractComponentsFromFileList(fileListRight);
-    leftComponents.addAll(this.extractComponentsFromNonJava(fileListsLeft));
-    righComponents.addAll(this.extractComponentsFromNonJava(fileListRight));
+//    leftComponents.addAll(this.extractComponentsFromNonJava(fileListsLeft));
+//    righComponents.addAll(this.extractComponentsFromNonJava(fileListRight));
     int commonSlicesCount = this.checkCommonSlices(leftComponents, righComponents);
     boolean existCommonSlices = (commonSlicesCount > 0) ? true : false;
     metrics = new ComponentMetrics(mergeScenario.getMergeCommitId(),
