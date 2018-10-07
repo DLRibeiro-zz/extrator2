@@ -2,9 +2,11 @@ package extrator;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import extrator.entities.MergeScenario;
+import extrator.entities.Metrics;
+import extrator.extractors.Extractor;
+import extrator.extractors.ExtractorFactory;
+import extrator.extractors.ProjectClusterizer;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -15,11 +17,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import org.apache.commons.io.FileUtils;
 
 public class ExtractorRunner implements Runnable {
 
-  private ComponentExtractor componentExtractor;
+  private Extractor componentExtractor;
   private PackageExtractor packageExtractor;
   private MergeScenarioReader mergeScenarioReader;
 
@@ -34,10 +35,7 @@ public class ExtractorRunner implements Runnable {
     Properties properties = new Properties();
     this.packageExtractor = new PackageExtractor();
     try {
-      loadProperties(properties);
-      System.out.println("Loaded properties");
-      buildComponentExtractor();
-      System.out.println("Build component extractor");
+      loadAndBuildExtractor(properties);
       String[] repoNames = properties.getProperty("repos").split(",");
       String[] csvFilesPaths = new String[repoNames.length];
 
@@ -71,9 +69,9 @@ public class ExtractorRunner implements Runnable {
           packageMetrics.add(mergeScenearioPackageMetrics);
         }
         String repoName = repoNames[index].replace("\"","");
-        writeToCsvFile(repoName,"",componentMetrics);
-        writeToCsvFile(repoName,"_Packages",packageMetrics);
-        writeToComponentsToCsvFile(repoName,"", componentMetrics);
+        writeToCsvFile(ExtractorConstants.METRICS_FOLDER ,repoName,"",componentMetrics);
+        writeToCsvFile(ExtractorConstants.METRICS_FOLDER,repoName,"_Packages",packageMetrics);
+        writeToComponentsToCsvFile(ExtractorConstants.COMPONENTS_FOLDER, repoName,"", componentMetrics);
         index++;
       }
     } catch (IOException e) {
@@ -81,7 +79,14 @@ public class ExtractorRunner implements Runnable {
     }
   }
 
-  private void writeToComponentsToCsvFile(String repository, String extraName, List<Metrics> metrics)
+  private void loadAndBuildExtractor(Properties properties) throws IOException {
+    PropertiesUtil.loadProperties(properties);
+    System.out.println("Loaded properties");
+    this.componentExtractor = ExtractorFactory.createExtractor(properties.getProperty(ExtractorConstants.EXTRACTOR_PROPERTY_NAME));
+    System.out.println("Build component extractor");
+  }
+
+  private void writeToComponentsToCsvFile(String folder, String repository, String extraName, List<Metrics> metrics)
       throws IOException {
     Writer writer = Files.newBufferedWriter(Paths.get(repository + extraName +"_components" + ".csv"));
     CSVWriter csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR,
@@ -95,7 +100,7 @@ public class ExtractorRunner implements Runnable {
     csvWriter.close();
   }
 
-  private void writeToCsvFile(String repository, String extraName, List<Metrics> metrics)
+  private void writeToCsvFile(String folder, String repository, String extraName, List<Metrics> metrics)
       throws IOException {
     Writer writer = Files.newBufferedWriter(Paths.get(repository + extraName + ".csv"));
     CSVWriter csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR,
@@ -109,31 +114,5 @@ public class ExtractorRunner implements Runnable {
     csvWriter.close();
   }
 
-  private void buildComponentExtractor() throws IOException {
-    InputStream inputStream = getClass().getClassLoader()
-        .getResourceAsStream("stopWords.txt");
-    BufferedReader buffReader = new BufferedReader(new InputStreamReader(inputStream));
-    List<String> listStopWords = new ArrayList<>();
-    String stopWord = "";
-    while ((stopWord = buffReader.readLine()) != null) {
-      listStopWords.add(stopWord);
-    }
-    InputStream inputStream2 = getClass().getClassLoader()
-        .getResourceAsStream("componentWords.txt");
-    BufferedReader buffReader2 = new BufferedReader(new InputStreamReader(inputStream2));
-    List<String> listComponentWords = new ArrayList<>();
-    String componentWord = "";
-    while ((componentWord = buffReader2.readLine()) != null) {
-      listComponentWords.add(componentWord);
-    }
-    this.componentExtractor = new ComponentExtractor(listComponentWords, listStopWords);
-  }
 
-  private void loadProperties(Properties properties) throws IOException {
-    InputStream inputStream = getClass().getClassLoader()
-        .getResourceAsStream(Constants.configFilename);
-    if (inputStream != null) {
-      properties.load(inputStream);
-    }
-  }
 }

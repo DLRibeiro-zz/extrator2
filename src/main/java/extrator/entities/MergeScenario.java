@@ -1,4 +1,4 @@
-package extrator;
+package extrator.entities;
 
 import com.opencsv.bean.CsvBindByName;
 

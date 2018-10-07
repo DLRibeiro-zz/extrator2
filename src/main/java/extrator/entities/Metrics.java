@@ -1,5 +1,6 @@
-package extrator;
+package extrator.entities;
 
+import extrator.BooleanConvertable;
 import java.util.ArrayList;
 import java.util.List;
 

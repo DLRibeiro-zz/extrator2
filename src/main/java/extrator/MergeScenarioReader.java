@@ -4,18 +4,13 @@ package extrator;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
-import com.opencsv.bean.HeaderColumnNameMappingStrategy;
-import com.opencsv.bean.HeaderColumnNameTranslateMappingStrategy;
+import extrator.entities.MergeScenario;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 public class MergeScenarioReader {
   private CSVReader reader;

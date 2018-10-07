@@ -1,15 +1,18 @@
-package extrator;
+package extrator.extractors;
 
+import extrator.ComponentMetrics;
+import extrator.entities.MergeScenario;
+import extrator.entities.Metrics;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 
-public class ComponentExtractor implements Extractor<MergeScenario> {
+public class SimpleStringComponentExtractor implements Extractor<MergeScenario> {
 
-  private List<String> excludedWords;
-  private List<String> componentWords;
+  protected List<String> excludedWords;
+  protected List<String> componentWords;
 
-  public ComponentExtractor(List<String> componentWords, List<String> excludedWords) {
+  public SimpleStringComponentExtractor(List<String> componentWords, List<String> excludedWords) {
     this.excludedWords = excludedWords;
     this.componentWords = componentWords;
   }
@@ -24,13 +27,13 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
 //    leftComponents.addAll(this.extractComponentsFromNonJava(fileListsLeft));
 //    righComponents.addAll(this.extractComponentsFromNonJava(fileListRight));
     int commonSlicesCount = this.checkCommonSlices(leftComponents, righComponents);
-    boolean existCommonSlices = (commonSlicesCount > 0) ? true : false;
+    boolean existCommonSlices = (commonSlicesCount > 0);
     metrics = new ComponentMetrics(mergeScenario.getMergeCommitId(),
         mergeScenario.isMergeConfliting(), existCommonSlices, commonSlicesCount, leftComponents, righComponents);
     return metrics;
   }
 
-  private int checkCommonSlices(List<String> left, List<String> right) {
+  protected int checkCommonSlices(List<String> left, List<String> right) {
     int commonSlicesCount = 0;
     for (String component : left) {
       if (right.contains(component)) {
@@ -40,7 +43,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return commonSlicesCount;
   }
 
-  private List<String> extractComponentsFromFileList(String fileList) {
+  protected List<String> extractComponentsFromFileList(String fileList) {
     List<String> javaFiles = getCleanJavaFiles(fileList);
     List<String> components = new ArrayList<>();
     for (String javaFile : javaFiles) {
@@ -52,7 +55,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return components;
   }
 
-  private List<String> extractComponentsFromNonJava(String fileList){
+  protected List<String> extractComponentsFromNonJava(String fileList){
     List<String> nonJavaFiles = this.getNonJavaFiles(fileList);
     List<String> components = new ArrayList<>();
     if(!nonJavaFiles.isEmpty()){
@@ -61,7 +64,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return components;
   }
 
-  private List<String> getCleanJavaFiles(String fileList) {
+  protected List<String> getCleanJavaFiles(String fileList) {
     List<String> javaFiles = this.getJavaFiles(fileList);
     for (int i = 0; i < javaFiles.size(); i++) {
       String javaFile = javaFiles.get(i);
@@ -71,7 +74,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return javaFiles;
   }
 
-  private List<String> getNonJavaFiles(String fileList){
+  protected List<String> getNonJavaFiles(String fileList){
     List<String> nonJavaFiles = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]","").trim().split("@");
     for(String file: allFiles){
@@ -82,7 +85,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return nonJavaFiles;
   }
 
-  private List<String> getJavaFiles(String fileList) {
+  protected List<String> getJavaFiles(String fileList) {
     List<String> javaFiles = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]", "").trim().split("@");
     for (String file : allFiles) {
@@ -93,7 +96,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return javaFiles;
   }
 
-  private String cleanForStopWord(String file) {
+  protected String cleanForStopWord(String file) {
     String cleanFileName = FilenameUtils.getName(file);
     for (String stopWord : this.excludedWords) {
       cleanFileName = cleanFileName.replace(stopWord, "");
@@ -101,7 +104,7 @@ public class ComponentExtractor implements Extractor<MergeScenario> {
     return cleanFileName;
   }
 
-  private String extractComponent(String file) {
+  protected String extractComponent(String file) {
     String component = file;
     for (String componentWord : this.componentWords) {
       component = component.replace(componentWord, "");

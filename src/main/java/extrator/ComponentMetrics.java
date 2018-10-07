@@ -1,5 +1,6 @@
 package extrator;
 
+import extrator.entities.Metrics;
 import java.util.List;
 
 public class ComponentMetrics extends Metrics {

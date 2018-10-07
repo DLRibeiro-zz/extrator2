@@ -1,6 +1,10 @@
 package extrator;
 
+import extrator.entities.MergeScenario;
+import extrator.entities.Metrics;
+import extrator.extractors.Extractor;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 
@@ -28,9 +32,7 @@ public class PackageExtractor implements Extractor<MergeScenario> {
   private List<String> getFiles(String fileList) {
     List<String> files = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]", "").trim().split("@");
-    for (String file : allFiles) {
-      files.add(file);
-    }
+    files = Arrays.asList(allFiles);
     return files;
   }
 

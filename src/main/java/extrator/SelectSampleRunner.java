@@ -2,6 +2,7 @@ package extrator;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
+import extrator.entities.MergeScenario;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -104,7 +105,7 @@ public class SelectSampleRunner implements Runnable {
 
   private void loadProperties(Properties properties) throws IOException {
     InputStream inputStream = getClass().getClassLoader()
-        .getResourceAsStream(Constants.configFilename);
+        .getResourceAsStream(ExtractorConstants.CONFIG_PROPERTIES);
     if (inputStream != null) {
       properties.load(inputStream);
     }
