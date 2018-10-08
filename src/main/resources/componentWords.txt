@@ -19,3 +19,7 @@ Manager
 Controller
 Handler
 Holder
+List
+Collection
+Map
+Util
