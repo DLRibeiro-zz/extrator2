@@ -7,6 +7,7 @@ import extrator.entities.Metrics;
 import extrator.extractors.Extractor;
 import extrator.extractors.ExtractorFactory;
 import extrator.extractors.ProjectClusterizer;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -17,6 +18,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import org.apache.commons.io.FileUtils;
 
 public class ExtractorRunner implements Runnable {
 
@@ -69,9 +71,9 @@ public class ExtractorRunner implements Runnable {
           packageMetrics.add(mergeScenearioPackageMetrics);
         }
         String repoName = repoNames[index].replace("\"","");
-        writeToCsvFile(ExtractorConstants.METRICS_FOLDER ,repoName,"",componentMetrics);
-        writeToCsvFile(ExtractorConstants.METRICS_FOLDER,repoName,"_Packages",packageMetrics);
-        writeToComponentsToCsvFile(ExtractorConstants.COMPONENTS_FOLDER, repoName,"", componentMetrics);
+        writeToCsvFile(properties.getProperty(ExtractorConstants.METRICS_FOLDER) ,repoName,"",componentMetrics);
+        writeToCsvFile(properties.getProperty(ExtractorConstants.METRICS_FOLDER),repoName,"_Packages",packageMetrics);
+        writeToComponentsToCsvFile(properties.getProperty(ExtractorConstants.COMPONENTS_FOLDER), repoName,"", componentMetrics);
         index++;
       }
     } catch (IOException e) {
@@ -88,7 +90,10 @@ public class ExtractorRunner implements Runnable {
 
   private void writeToComponentsToCsvFile(String folder, String repository, String extraName, List<Metrics> metrics)
       throws IOException {
-    Writer writer = Files.newBufferedWriter(Paths.get(repository + extraName +"_components" + ".csv"));
+    String completeFolderPath = "results/" + folder;
+    File folderFile = new File(completeFolderPath);
+    FileUtils.forceMkdir(folderFile);
+    Writer writer = Files.newBufferedWriter(Paths.get(completeFolderPath+"/"+repository + extraName +"_components" + ".csv"));
     CSVWriter csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR,
         CSVWriter.NO_QUOTE_CHARACTER, CSVWriter.DEFAULT_ESCAPE_CHARACTER,
         CSVWriter.DEFAULT_LINE_END);
@@ -102,7 +107,10 @@ public class ExtractorRunner implements Runnable {
 
   private void writeToCsvFile(String folder, String repository, String extraName, List<Metrics> metrics)
       throws IOException {
-    Writer writer = Files.newBufferedWriter(Paths.get(repository + extraName + ".csv"));
+    String completeFolderPath = "results/" + folder;
+    File folderFile = new File(completeFolderPath);
+    FileUtils.forceMkdir(folderFile);
+    Writer writer = Files.newBufferedWriter(Paths.get(completeFolderPath+"/"+repository + extraName + ".csv"));
     CSVWriter csvWriter = new CSVWriter(writer, CSVWriter.DEFAULT_SEPARATOR,
         CSVWriter.NO_QUOTE_CHARACTER, CSVWriter.DEFAULT_ESCAPE_CHARACTER,
         CSVWriter.DEFAULT_LINE_END);

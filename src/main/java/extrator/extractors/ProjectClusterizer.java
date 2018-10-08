@@ -46,6 +46,7 @@ public class ProjectClusterizer {
     File projectMainFolder = new File(this.projectPath);
     File[] allFiles = projectMainFolder.listFiles();
     Map<String, Integer> candidateComponents = new HashMap<String, Integer>();
+    System.out.println(projectMainFolder.isDirectory());
     Map<String, List<String>> mapFilePossibleComponents = new HashMap<>();
     Map<String, List<String>> mapFileComponent = new HashMap<>();
     List<String> selectedComponents = new ArrayList<>();
@@ -66,7 +67,7 @@ public class ProjectClusterizer {
       for (String possibleComponent : mapFileComponentsFromFile.getValue()) {
         Integer countFilesOnComponent = candidateComponents.get(possibleComponent);
         if (countFilesOnComponent != null) {
-          candidateComponents.replace(possibleComponent, countFilesOnComponent++);
+          candidateComponents.replace(possibleComponent, countFilesOnComponent.intValue()+1);
         } else {
           candidateComponents.put(possibleComponent, 1);
         }
@@ -103,7 +104,7 @@ public class ProjectClusterizer {
     if (file.isDirectory()) {
       File[] subFiles = file.listFiles();
       for (File fileOrDir : subFiles) {
-        javaFileNames.putAll(this.getJavaFiles(file));
+        javaFileNames.putAll(this.getJavaFiles(fileOrDir));
       }
       return javaFileNames;
     } else {
@@ -113,7 +114,11 @@ public class ProjectClusterizer {
         String cleanFileName = this.cleanNameStopwordsComponentWords(fileNameNoExtension);
         List<String> componentsCandidates = Arrays
             .asList(StringUtils.splitByCharacterTypeCamelCase(cleanFileName));
-        javaFileNames.put(fileNameNoExtension, componentsCandidates);
+        List<String> lowerCaseComponentsCandidates = new ArrayList<>();
+        for(String componentName : componentsCandidates){
+          lowerCaseComponentsCandidates.add(componentName.toLowerCase());
+        }
+        javaFileNames.put(fileNameNoExtension, lowerCaseComponentsCandidates);
         return javaFileNames;
       }
     }
