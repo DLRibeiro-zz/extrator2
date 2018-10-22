@@ -6,7 +6,6 @@ import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;
 import extrator.extractors.Extractor;
 import extrator.extractors.ExtractorFactory;
-import extrator.extractors.ProjectClusterizer;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -71,9 +70,13 @@ public class ExtractorRunner implements Runnable {
           packageMetrics.add(mergeScenearioPackageMetrics);
         }
         String repoName = repoNames[index].replace("\"","");
-        writeToCsvFile(properties.getProperty(ExtractorConstants.METRICS_FOLDER) ,repoName,"",componentMetrics);
-        writeToCsvFile(properties.getProperty(ExtractorConstants.METRICS_FOLDER),repoName,"_Packages",packageMetrics);
-        writeToComponentsToCsvFile(properties.getProperty(ExtractorConstants.COMPONENTS_FOLDER), repoName,"", componentMetrics);
+        String metricsFolder =  properties.getProperty(ExtractorConstants.METRICS_FOLDER);
+        String extractorType = properties.getProperty(ExtractorConstants.EXTRACTOR_PROPERTY_NAME);
+        String componentsFolder = properties.getProperty(ExtractorConstants.COMPONENTS_FOLDER);
+        String mergeFolder = properties.getProperty(ExtractorConstants.MERGE_FOLDER_PROPERTY);
+        writeToCsvFile(metricsFolder + "_" +extractorType + "_" + mergeFolder  ,repoName,"",componentMetrics);
+        writeToCsvFile(metricsFolder + "_" +extractorType +"_" +mergeFolder,repoName,"_Packages",packageMetrics);
+        writeToComponentsToCsvFile(componentsFolder + "_" +extractorType +"_"+mergeFolder, repoName,"", componentMetrics);
         index++;
       }
     } catch (IOException e) {

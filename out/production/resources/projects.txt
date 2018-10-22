@@ -1,0 +1,1 @@
+repos="AntennaPod, ExoPlayer, android, andors-trail, fdroidclient, Etar-Calendar, NewPipe, PocketHub, Timber, TweetLanes"

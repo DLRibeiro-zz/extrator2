@@ -8,4 +8,5 @@ public class ExtractorConstants {
   public static final String METRICS_FOLDER = "metricsFolder";
   public static final String COMPONENTS_FOLDER = "componentsFolder";
   public static final String PROJECT_PATH_PROPERTY = "projectPath";
+  public static final String MERGE_FOLDER_PROPERTY = "folder";
 }
