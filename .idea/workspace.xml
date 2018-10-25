@@ -2,56 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc89f05b-d824-4ad0-93e0-2c8d4139c33e" name="Default" comment="Criando estrutura para o extrator que utiliza nomes.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/ComponentExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/ComponentMetrics.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/extrator/ComponentMetrics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/Extractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/ExtractorRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/extrator/ExtractorRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/MergeScenario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/MergeScenarioReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/extrator/MergeScenarioReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/Metrics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/extrator/PackageExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/extrator/PackageExtractor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/extratorJava-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/extratorJava-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/allMerges/Summary_MergesByProject.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/allMerges/Summary_MergesByProject.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/allMerges/android_MergeScenarioList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/allMerges/android_MergeScenarioList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/allMerges/projectList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/allMerges/projectList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/componentWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/componentWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/randomizedMerges/Summary_MergesByProject.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/randomizedMerges/Summary_MergesByProject.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/randomizedMerges/android_MergeScenarioList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/randomizedMerges/android_MergeScenarioList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/randomizedMerges/projectList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/randomizedMerges/projectList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictors" beforeDir="false" afterPath="$PROJECT_DIR$/predictors" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictors/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictors/projectsList" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/projectsList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/r_scripts" beforeDir="false" afterPath="$PROJECT_DIR$/r_scripts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/r_scripts/input/allProjects_AllVariables.csv" beforeDir="false" afterPath="$PROJECT_DIR$/r_scripts/input/allProjects_AllVariables.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ Etar-Calendar_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ ExoPlayer_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ NewPipe_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ PocketHub_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ Timber_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ TweetLanes_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ andors-trail_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ android_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/ fdroidclient_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component/AntennaPod_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/component_name/AntennaPod_components.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ Etar-Calendar.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ Etar-Calendar_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ ExoPlayer.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ ExoPlayer_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ NewPipe.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ NewPipe_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ PocketHub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ PocketHub_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ Timber.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ Timber_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ TweetLanes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ TweetLanes_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ andors-trail.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ andors-trail_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ android.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ android_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ fdroidclient.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/ fdroidclient_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/AntennaPod.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics/AntennaPod_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics_name/AntennaPod.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/metrics_name/AntennaPod_Packages.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/ExtractorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/ExtractorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/extractors/ProjectClusterizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/extractors/ProjectClusterizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -107,48 +92,59 @@
     <session id="-1526592055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.52" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.71" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="37" />
+          <entry key="gradle" value="2083" />
           <entry key="java" value="3072" />
+          <entry key="md" value="167" />
           <entry key="properties" value="315" />
-          <entry key="txt" value="143" />
+          <entry key="txt" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Groovy" value="2083" />
           <entry key="JAVA" value="3072" />
-          <entry key="PLAIN_TEXT" value="180" />
+          <entry key="Markdown" value="167" />
+          <entry key="PLAIN_TEXT" value="198" />
           <entry key="Properties" value="315" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Gemfile" value="1" />
           <entry key="csv" value="23" />
-          <entry key="java" value="9" />
-          <entry key="projectsList" value="1" />
-          <entry key="properties" value="1" />
+          <entry key="gradle" value="2" />
+          <entry key="java" value="10" />
+          <entry key="lock" value="1" />
+          <entry key="md" value="2" />
+          <entry key="projectsList" value="2" />
+          <entry key="properties" value="2" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="23" />
-          <entry key="JAVA" value="9" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="1" />
+          <entry key="Groovy" value="2" />
+          <entry key="JAVA" value="10" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -162,46 +158,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="3" column="6" selection-start-line="3" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/component_name_allMerges/AntennaPod_components.csv">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/AntennaPod_MergeScenarioList.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/randomizedMerges/FastHub_MergeScenarioList.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="76" column="89" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1054">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ExtractorConstants.java">
+        <entry file="file://$PROJECT_DIR$/predictors/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/predictors/projectsList">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/predictors/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/predictors/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="187">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -274,34 +303,18 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'extratorJava'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'extratorJava'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
+                <option name="name" value="cleanAllProjectsAllVariables" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'extratorJava'. [incubating]" />
+                <option name="description" value="Runs this project as a JVM application" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'extratorJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
+                <option name="name" value="run" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files." />
@@ -309,14 +322,14 @@
                 <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
+                <option name="description" value="Generate a gradle.rb stub for executing Ruby binstubs" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
+                <option name="name" value="generateGradleRb" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
+                <option name="name" value="startScripts" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
@@ -329,6 +342,10 @@
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareForRscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processResources" />
@@ -337,6 +354,11 @@
                 <option name="description" value="Displays the tasks runnable from root project 'extratorJava'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the main distributions" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build." />
@@ -354,14 +376,91 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'extratorJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'extratorJava'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distTar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distZip" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'extratorJava'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildPredictor" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanPredictorsInput" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'extratorJava'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'extratorJava'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the project as a distribution as-is." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyPredictorsOutputToRscriptInput" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'extratorJava'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
@@ -379,19 +478,13 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'extratorJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyOutputJavaToPredictors" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
@@ -399,9 +492,9 @@
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="description" value="Prepare the gems/jars from the `gem` dependencies, extracts the gems into jruby.installGemDir and sets up the jars in jruby.installGemDir/jars" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
+                <option name="name" value="jrubyPrepare" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'extratorJava'." />
@@ -415,9 +508,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6114618887508" />
+        <entry key="$PROJECT_DIR$" value="6138109922584" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="189027729" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1523719378" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2083459160" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="810967104" />
       </map>
@@ -432,6 +525,32 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jruby-gradle/jruby-gradle-plugin/1.1.5/e4aa4c1dc47675dad6cfb820693a4b46efb35b8e/jruby-gradle-plugin-1.1.5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.2.12.v20150709/593c7b0fd62f253a40e24cf979dab1851269d1b4/jetty-server-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.2.12.v20150709/6a579c61f62590be81d4adafbd49304cfc9d4d91/jetty-webapp-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.saumya.mojo/rubygems/0.2/66508a3cfafafc910493a7f482ca26cce2dc9bad/rubygems-0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.2.12.v20150709/4691ff0fbad230771b179252b6fbd0394ca5a3f/jetty-http-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.12.v20150709/403de68989c5266538d381c0f67ec8013e6d1950/jetty-io-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.2.12.v20150709/d6991d5a91388cda49a1e84e1fdfced734a16cb2/jetty-xml-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.2.12.v20150709/678e35231ee15c0ed440c898df8505ee2445e8cd/jetty-servlet-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.12.v20150709/dde0140cfe53d9ef8f950fdeeff7a10184e29a7c/jetty-util-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.2.12.v20150709/c2598a4e0677d3c1ccaf4756224fa3c4d0abb0b2/jetty-security-9.2.12.v20150709-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jruby-gradle/jruby-gradle-plugin/1.1.5/3150a364edef052b1bb0336ce23213974b51850f/jruby-gradle-plugin-1.1.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.2.12.v20150709/8c90ceffb6954385b024899d334192947d0e4077/jetty-server-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.2.12.v20150709/598c13ffa689371a93ee90117933656df29330fb/jetty-webapp-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.saumya.mojo/rubygems/0.2/f28821655fe04ffe3fd702ee9cb1f2d66042000f/rubygems-0.2.war" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.2.12.v20150709/9a6c83f52c70c28e2272d83866b4111cd15ddbc5/jetty-http-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.12.v20150709/c02e9e303d231a589e0c8866c1ee89bcdeb40a55/jetty-io-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.2.12.v20150709/25cd8537b457767994627e1c0b838c3bdd8e394f/jetty-xml-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.2.12.v20150709/50116cac18ad893c9628f0a1984390464b133921/jetty-servlet-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.12.v20150709/d99d38adfdb5ec677643f04fa862554b0bb8b42e/jetty-util-9.2.12.v20150709.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.2.12.v20150709/9ace95998fbaae8425b2621c90230a229a554784/jetty-security-9.2.12.v20150709.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -600,7 +719,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/ComponentExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/MainSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/Main.java" />
@@ -621,6 +739,8 @@
         <option value="$PROJECT_DIR$/src/main/java/extrator/ExtractorConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/ReadMe.md" />
       </list>
     </option>
   </component>
@@ -636,6 +756,20 @@
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -645,34 +779,34 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="predictors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539404322439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540401372830" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AulaPlay" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -691,7 +825,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Extrator">
+  <component name="RunManager" selected="Gradle.extratorJava2 [buildPredictor] (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -721,7 +855,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="extratorJava2 [jar]" type="GradleRunConfiguration" factoryName="Gradle">
+    <configuration name="extratorJava2 [buildPredictor] (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -732,7 +866,95 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="buildPredictor" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="extratorJava2 [buildPredictor]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="createPredictor" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="extratorJava2 [cleanPredictorsInput]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanPredictorsInput" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="extratorJava2 [copyOutputJavaToPredictors]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="copyOutputJavaToPredictors" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="extratorJava2 [jar]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="extratorJava2 [prepareForRscript]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="prepareForRscript" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -757,7 +979,21 @@
       <item itemvalue="Application.Extrator" />
       <item itemvalue="Application.Sample" />
       <item itemvalue="Gradle.extratorJava2 [jar]" />
+      <item itemvalue="Gradle.extratorJava2 [copyOutputJavaToPredictors]" />
+      <item itemvalue="Gradle.extratorJava2 [buildPredictor]" />
+      <item itemvalue="Gradle.extratorJava2 [prepareForRscript]" />
+      <item itemvalue="Gradle.extratorJava2 [buildPredictor] (1)" />
+      <item itemvalue="Gradle.extratorJava2 [cleanPredictorsInput]" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.extratorJava2 [buildPredictor] (1)" />
+        <item itemvalue="Gradle.extratorJava2 [copyOutputJavaToPredictors]" />
+        <item itemvalue="Gradle.extratorJava2 [cleanPredictorsInput]" />
+        <item itemvalue="Gradle.extratorJava2 [prepareForRscript]" />
+        <item itemvalue="Gradle.extratorJava2 [buildPredictor]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -796,7 +1032,8 @@
       <workItem from="1539732688776" duration="7720000" />
       <workItem from="1539954545830" duration="1491000" />
       <workItem from="1540147888404" duration="4597000" />
-      <workItem from="1540247124617" duration="227000" />
+      <workItem from="1540247124617" duration="1817000" />
+      <workItem from="1540335823346" duration="12092000" />
     </task>
     <task id="LOCAL-00001" summary="Criando estrutura para o extrator que utiliza nomes.">
       <created>1538939294554</created>
@@ -823,13 +1060,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76481000" />
+    <option name="totallyTimeSpent" value="90042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25945538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -843,8 +1079,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32838285" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -932,6 +1168,18 @@
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/build.gradle</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/build.gradle</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -939,25 +1187,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ NewPipe_components.csv" />
-    <entry file="file://$PROJECT_DIR$/ NewPipe_Packages.csv" />
-    <entry file="file://$PROJECT_DIR$/ PocketHub.csv" />
-    <entry file="file://$PROJECT_DIR$/ Etar-Calendar_components.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomizedMerges/andors-trail_MergeScenarioList.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="125" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AntennaPod_components.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomizedMerges/AntennaPod_MergeScenarioList.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="2" column="11016" selection-start-line="2" selection-start-column="11016" selection-end-line="2" selection-end-column="11016" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ComponentMetrics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -994,13 +1223,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AntennaPod.csv" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/Extractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1073,10 +1295,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-1071" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1099,13 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/MainSample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1123,23 +1338,19 @@
     <entry file="file://$PROJECT_DIR$/results/metrics_name/AntennaPod.csv" />
     <entry file="file://$PROJECT_DIR$/results/component_simple/AntennaPod_components.csv" />
     <entry file="file://$PROJECT_DIR$/results/component_name/AntennaPod_components.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/randomizedMerges/FastHub_MergeScenarioList.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/AntennaPod_MergeScenarioList.csv">
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="csv-text-editor">
         <state relative-caret-position="31">
           <caret line="253" column="3572" selection-start-line="253" selection-start-column="3560" selection-end-line="253" selection-end-column="3572" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/randomizedMerges/FastHub_MergeScenarioList.csv">
-      <provider editor-type-id="csv-text-editor" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java">
@@ -1160,12 +1371,67 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/results/component_name_allMerges/AntennaPod_components.csv">
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="csv-text-editor">
         <state relative-caret-position="135">
           <caret line="47" column="456" selection-start-line="47" selection-start-column="456" selection-end-line="47" selection-end-column="456" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/projectsList">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
