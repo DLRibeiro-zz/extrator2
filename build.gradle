@@ -1,6 +1,16 @@
+buildscript {
+    repositories { jcenter() }
+
+    dependencies {
+        classpath "com.github.jruby-gradle:jruby-gradle-plugin:[1.1.2,1.2)"
+    }
+}
+
 plugins {
     id 'java'
 }
+apply plugin: "com.github.jruby-gradle.base"
+
 
 group 'extratorJava'
 version '1.0-SNAPSHOT'
@@ -11,11 +21,90 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "com.opencsv:opencsv:4.0"
     compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    jrubyExec "rubygems:require_all:1.4+"
+}
+
+apply plugin: "com.github.jruby-gradle.base"
+apply plugin: 'application'
+
+import com.github.jrubygradle.JRubyExec
+
+//ARQUIVOS
+task cleanPredictorsInput(type : Delete){
+    delete "${project.projectDir.toString().replace("\\","/")}/predictors/input/"
+}
+
+task cleanAllProjectsAllVariables(type: Delete){
+    delete "${project.projectDir.toString().replace("\\","/")}/r_scripts/input/allProjects_AllVariables.csv"
+}
+
+task copyPredictorsOutputToRscriptInput(type: Copy, dependsOn: cleanAllProjectsAllVariables){
+    from("${project.projectDir.toString().replace("\\","/")}/predictors/output/allProjects_AllVariables.csv")
+    into  "${project.projectDir.toString().replace("\\","/")}/r_scripts/input/"
+}
+
+task copyOutputJavaToPredictors(type : Copy, dependsOn: cleanPredictorsInput){
+    def folders = readFile()
+    def extractor = folders[0]
+    def folder = folders[1]
+    def metrics = folders[2]
+    println folders
+    println metrics
+    println "${project.projectDir.toString().replace("\\", "/")}/results/${metrics}_${extractor}_${folder}"
+    from("${project.projectDir.toString().replace("\\", "/")}/results/${metrics}_${extractor}_${folder}/")
+    into "${project.projectDir.toString().replace("\\","/")}/predictors/input/"
+    from("${project.projectDir.toString().replace("\\","/")}/src/main/resources/${folder}/")
+    into "${project.projectDir.toString().replace("\\","/")}/predictors/input/"
+}
+
+def readFile(){
+        File file = file('src/main/resources/config.properties')
+        def folders = []
+        def metrics
+        def folder
+        def extractor
+        file.readLines().each{
+            if(it.startsWith("metricsFolder")){
+                metrics = (it.split("=")[1])
+            }
+            if(it.startsWith("folder")){
+                folder = (it.split("=")[1])
+            }
+            if(it.startsWith("extractor")){
+                extractor = (it.split("=")[1])
+            }
+        }
+        folders = [extractor, folder, metrics]
+        return folders
+}
+//ARQUIVOS
+
+//SCRIPTS RUBY
+
+task buildPredictor(type: JRubyExec){
+        script "${project.projectDir.toString().replace("\\", "/")}/predictors/MainAnalysisProjects.rb"
+}
+
+task prepareForRscript(){
+    doLast {
+        println "The Rscript can be called now"
+    }
+}
+
+mainClassName = "extrator.Main"
+
+def buildAliases = [
+        'createPredictor' : ['run','copyOutputJavaToPredictors', 'buildPredictor', 'copyPredictorsOutputToRscriptInput'],
+        'rebuild' : ['clean', 'assemble']
+]
+def expandedTaskList = []
+
+gradle.startParameter.taskNames.each {
+    expandedTaskList << (buildAliases[it] ? buildAliases[it] : it)
 }
 
 jar{
