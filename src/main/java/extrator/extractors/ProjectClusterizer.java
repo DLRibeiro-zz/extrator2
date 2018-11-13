@@ -1,6 +1,5 @@
 package extrator.extractors;
 
-import extrator.ExtractorConstants;
 import extrator.PropertiesUtil;
 import java.io.File;
 import java.io.IOException;
@@ -54,20 +53,24 @@ public class ProjectClusterizer {
      * Get all possible components from all files, associated with their respective file.
      * e.g Map -> FeedItem : {Feed, Item}
      */
-    for (File fileOrDir : allFiles) {
-      mapFilePossibleComponents.putAll(this.getJavaFiles(fileOrDir));
-    }
+    getFilesAndPossibleComponents(allFiles, mapFilePossibleComponents);
 
     /**
      * Count how many files have each component
      */
-    for (Entry<String, List<String>> mapFileComponentsFromFile : mapFilePossibleComponents
-        .entrySet()) {
-      for (String possibleComponent : mapFileComponentsFromFile.getValue()) {
-        countCandidateComponents(candidateComponents, possibleComponent);
-      }
+    countFilesForComponents(candidateComponents, mapFilePossibleComponents);
+    mapFileToModule(candidateComponents, mapFilePossibleComponents);
+  }
+
+  protected void getFilesAndPossibleComponents(File[] allFiles,
+      Map<String, List<String>> mapFilePossibleComponents) {
+    for (File fileOrDir : allFiles) {
+      mapFilePossibleComponents.putAll(this.getJavaFiles(fileOrDir));
     }
-    this.candidateComponents = candidateComponents;
+  }
+
+  protected void mapFileToModule(Map<String, Integer> candidateComponents,
+      Map<String, List<String>> mapFilePossibleComponents) {
     /**
      * For each file now, check which POSSIBLE COMPONENTS that were extracted from him for POSSIBLE COMPONENTS
      * WITH HIGH CARDINALITY. THEN, IT IS CLUSTERED TO THE COMPONENTS WITH HIGHER CARDINALITY.
@@ -82,6 +85,17 @@ public class ProjectClusterizer {
        */
       this.clusterComponents.put(mapFileComponentsFromFile.getKey(), chosenComponentsForFile);
     }
+  }
+
+  protected void countFilesForComponents(Map<String, Integer> candidateComponents,
+      Map<String, List<String>> mapFilePossibleComponents) {
+    for (Entry<String, List<String>> mapFileComponentsFromFile : mapFilePossibleComponents
+        .entrySet()) {
+      for (String possibleComponent : mapFileComponentsFromFile.getValue()) {
+        countCandidateComponents(candidateComponents, possibleComponent);
+      }
+    }
+    this.candidateComponents = candidateComponents;
   }
 
   private void addToBiggerCluster(Map<String, Integer> candidateComponents,
@@ -100,7 +114,7 @@ public class ProjectClusterizer {
     }
   }
 
-  private int countCandidateComponents(Map<String, Integer> candidateComponents,
+  protected int countCandidateComponents(Map<String, Integer> candidateComponents,
       String possibleComponent) {
     Integer countFilesOnComponent = candidateComponents.get(possibleComponent);
     if (countFilesOnComponent != null) {
@@ -123,16 +137,7 @@ public class ProjectClusterizer {
     for(String possibleComponent: possibleComponentesFromFile){
       this.countCandidateComponents(this.candidateComponents, possibleComponent);
     }
-    for (Entry<String, List<String>> mapFileComponentsFromFile : possibleComponents
-        .entrySet()) {
-      List<String> chosenComponentsForFile = new ArrayList<>();
-      addToBiggerCluster(this.candidateComponents, mapFileComponentsFromFile,
-          chosenComponentsForFile);
-      /**
-       * Finalize the clustering, mapping each file to their clusters, to be consulted after
-       */
-      this.clusterComponents.put(mapFileComponentsFromFile.getKey(), chosenComponentsForFile);
-    }
+    mapFileToModule(this.candidateComponents, possibleComponents);
 
   }
 
@@ -141,14 +146,12 @@ public class ProjectClusterizer {
     Map<String, List<String>> javaFileNames = new HashMap<>();
     if (file.isDirectory()) {
       File[] subFiles = file.listFiles();
-      for (File fileOrDir : subFiles) {
-        javaFileNames.putAll(this.getJavaFiles(fileOrDir));
-      }
+      getFilesAndPossibleComponents(subFiles, javaFileNames);
       return javaFileNames;
     } else {
       String fileName = FilenameUtils.getName(file.getAbsolutePath());
       if (fileName.contains(".java")) {
-        getPossibleComponentsFromFile(javaFileNames, fileName);
+        this.getPossibleComponentsFromFile(javaFileNames, fileName);
         return javaFileNames;
       }
     }
@@ -163,11 +166,18 @@ public class ProjectClusterizer {
         .asList(StringUtils.splitByCharacterTypeCamelCase(cleanFileName));
     List<String> lowerCaseComponentsCandidates = new ArrayList<>();
     for(String componentName : componentsCandidates){
-      lowerCaseComponentsCandidates.add(componentName.toLowerCase());
+      try {
+        lowerCaseComponentsCandidates.add(componentNameExtract(componentName));
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
     javaFileNames.put(fileNameNoExtension, lowerCaseComponentsCandidates);
   }
 
+  protected String componentNameExtract(String componentName) throws IOException {
+    return componentName.toLowerCase();
+  }
   public List<String> getStopWords() {
     return stopWords;
   }
@@ -205,10 +215,12 @@ public class ProjectClusterizer {
     String cleanFileName = fileName;
     for (String stopWord : this.stopWords) {
       cleanFileName = cleanFileName.replace(stopWord, "");
+      cleanFileName = cleanFileName.replace(stopWord.toLowerCase(),"");
     }
 
     for (String stopWord : this.componentWords) {
       cleanFileName = cleanFileName.replace(stopWord, "");
+      cleanFileName = cleanFileName.replace(stopWord.toLowerCase(),"");
     }
     return cleanFileName;
 

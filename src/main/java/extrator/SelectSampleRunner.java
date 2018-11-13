@@ -3,6 +3,7 @@ package extrator;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import extrator.entities.MergeScenario;
+import extrator.extractors.ExtractorConstants;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

@@ -1,5 +1,6 @@
 package extrator;
 
+import extrator.extractors.ExtractorConstants;
 import extrator.extractors.ExtractorFactory;
 import java.io.BufferedReader;
 import java.io.IOException;

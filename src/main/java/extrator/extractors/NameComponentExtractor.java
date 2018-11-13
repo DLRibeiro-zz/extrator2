@@ -1,8 +1,8 @@
 package extrator.extractors;
 
-import extrator.ExtractorConstants;
 import extrator.PropertiesUtil;
 import extrator.entities.MergeScenario;
+import extrator.entities.Metrics;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -34,12 +34,26 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
     this.clusterizer.clusterProject();
   }
 
-  private List<String> generateProjectPaths(String projectPaths){
+  public NameComponentExtractor(List<String> componentWords,
+      List<String> excludedWords, boolean isName) {
+    super(componentWords, excludedWords);
+    Properties properties = new Properties();
+    try {
+      PropertiesUtil.loadProperties(properties);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    String projectPaths = properties.getProperty(ExtractorConstants.PROJECT_PATH_PROPERTY);
+    this.projectPaths = this.generateProjectPaths(projectPaths);
+    this.currentProjectPosition = 0;
+  }
+
+  private List<String> generateProjectPaths(String projectPaths) {
     List<String> listProjectPaths = new ArrayList<>();
-    String[] arrayProjectPaths = projectPaths.replace("[","").replace("]","").split("\\|");
-    for(String projectPath : arrayProjectPaths){
+    String[] arrayProjectPaths = projectPaths.replace("[", "").replace("]", "").split("\\|");
+    for (String projectPath : arrayProjectPaths) {
       String trimmedProjectPath = projectPath.trim();
-      if(!trimmedProjectPath.equals("")){
+      if (!trimmedProjectPath.equals("")) {
         listProjectPaths.add(trimmedProjectPath);
       }
     }
@@ -66,14 +80,20 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
     for (String component : selectedComponents) {
       selectedComponentsList.add(component);
     }
-    this.changeProjectClusterizer(this.currentProjectPosition+1);
     return selectedComponentsList;
   }
 
-  private void changeProjectClusterizer(int projectPosition){
-    if(projectPosition < this.projectPaths.size()) {
-      this.clusterizer = new ProjectClusterizer(this.projectPaths.get(projectPosition));
-      this.currentProjectPosition = projectPosition;
+  @Override
+  public Metrics extract(MergeScenario mergeScenario) {
+    Metrics metric = super.extract(mergeScenario);
+    return metric;
+  }
+
+  public void changeProjectClusterizer() {
+    if(this.currentProjectPosition < this.projectPaths.size()-1) {
+      this.currentProjectPosition++;
+      this.clusterizer = new ProjectClusterizer(this.projectPaths.get(this.currentProjectPosition));
+      this.clusterizer.clusterProject();
     }
   }
 
@@ -98,5 +118,17 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
       cleanJavaFiles.add(cleanJavaFile);
     }
     return cleanJavaFiles;
+  }
+
+  public ProjectClusterizer getClusterizer() {
+    return clusterizer;
+  }
+
+  public void setClusterizer(ProjectClusterizer clusterizer) {
+    this.clusterizer = clusterizer;
+  }
+
+  public List<String> getProjectPaths() {
+    return projectPaths;
   }
 }

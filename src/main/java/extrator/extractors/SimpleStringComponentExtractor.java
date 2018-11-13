@@ -12,6 +12,10 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
   protected List<String> excludedWords;
   protected List<String> componentWords;
 
+  public SimpleStringComponentExtractor(){
+
+  }
+
   public SimpleStringComponentExtractor(List<String> componentWords, List<String> excludedWords) {
     this.excludedWords = excludedWords;
     this.componentWords = componentWords;

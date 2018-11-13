@@ -5,7 +5,10 @@ import com.opencsv.CSVWriter;
 import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;
 import extrator.extractors.Extractor;
+import extrator.extractors.ExtractorConstants;
 import extrator.extractors.ExtractorFactory;
+import extrator.extractors.NameComponentExtractor;
+import extrator.extractors.SimpleStringComponentExtractor;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -68,6 +71,10 @@ public class ExtractorRunner implements Runnable {
           Metrics mergeScenearioPackageMetrics = this.packageExtractor.extract(mergeScenario);
           componentMetrics.add(mergeScenarioComponentMetrics);
           packageMetrics.add(mergeScenearioPackageMetrics);
+        }if( this.componentExtractor instanceof NameComponentExtractor){
+          System.out.println("Change project");
+          NameComponentExtractor nameComponentExtractor = (NameComponentExtractor) this.componentExtractor;
+          nameComponentExtractor.changeProjectClusterizer();
         }
         String repoName = repoNames[index].replace("\"","");
         String metricsFolder =  properties.getProperty(ExtractorConstants.METRICS_FOLDER);
