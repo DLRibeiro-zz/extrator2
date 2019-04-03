@@ -39,7 +39,12 @@ public class StemProjectClusterizer extends ProjectClusterizer {
     while (result.incrementToken()) {
       tokens.add(resultAttr.toString());
     }
-    return tokens.get(0);
+    String returnString = componentName;
+    result.close();
+    if(tokens.size()!=0){
+      returnString = tokens.get(0);
+    }
+    return returnString;
   }
 
   public void clusterProject() {
@@ -53,7 +58,7 @@ public class StemProjectClusterizer extends ProjectClusterizer {
      * e.g Map -> FeedItem : {Feed, Item}
      */
     getFilesAndPossibleComponents(allFiles, mapFilePossibleComponents);
-
+    this.findSimilarStrings(mapFilePossibleComponents);
     /**
      * Count how many files have each component
      */
@@ -73,26 +78,37 @@ public class StemProjectClusterizer extends ProjectClusterizer {
       String first = comparableStrings.get(i);
       for (int j = i + 1; j < comparableStrings.size(); j++) {
         String second = comparableStrings.get(j);
-        if (nl.similarity(first, second) > 0.8) {
+        if (nl.similarity(first, second) > 0.8 && nl.similarity(first,second) != 1.0) {
           if (this.similarStrings.get(first) == null) {
-            Set<String> newSimilar = new HashSet<>();
-            newSimilar.add(second);
-            this.similarStrings.put(first, newSimilar);
-            Set<String> newSimilar1 = new HashSet<>();
-            newSimilar1.add(first);
-            this.similarStrings.put(second, newSimilar1);
+            this.createNewSimilarSet(first, second);
+            if(this.similarStrings.get(second) == null){
+              this.createNewSimilarSet(second, first);
+            }else{
+              this.addNewSimilar(second, first);
+            }
           } else {
-            Set<String> oldSimilar = this.similarStrings.get(first);
-            oldSimilar.add(second);
-            this.similarStrings.replace(first, oldSimilar);
-            Set<String> oldSimilar2 = this.similarStrings.get(second);
-            oldSimilar2.add(first);
-            this.similarStrings.replace(second, oldSimilar2);
+            this.addNewSimilar(first,second);
+            if(this.similarStrings.get(second) == null){
+              this.createNewSimilarSet(second, first);
+            }else{
+              this.addNewSimilar(second, first);
+            }
           }
         }
       }
     }
+  }
 
+  private void addNewSimilar(String keyWord, String newSimilar){
+    Set<String> oldSimilar = this.similarStrings.get(keyWord);
+    oldSimilar.add(newSimilar);
+    this.similarStrings.replace(keyWord, oldSimilar);
+  }
+
+  private void createNewSimilarSet(String keyWord, String firstSimilar){
+    Set<String> newSimilar = new HashSet<>();
+    newSimilar.add(firstSimilar);
+    this.similarStrings.put(keyWord, newSimilar);
   }
   //TODO NEED TO CHANGE FOR COUNTING ON THE SIMILARS
   @Override
@@ -107,12 +123,14 @@ public class StemProjectClusterizer extends ProjectClusterizer {
     if (countFilesOnComponent != null) {
       candidateComponents.replace(possibleComponent, countFilesOnComponent.intValue()+1);
       Set<String> similarComponents = this.similarStrings.get(possibleComponent);
-      for(String similarComponent: similarComponents){
-        Integer countSimilar = candidateComponents.get(similarComponent);
-        if(countSimilar != null){
-          candidateComponents.replace(similarComponent, countSimilar.intValue() +1);
-        }else{
-          candidateComponents.put(similarComponent, 1);
+      if(similarComponents != null) {
+        for (String similarComponent : similarComponents) {
+          Integer countSimilar = candidateComponents.get(similarComponent);
+          if (countSimilar != null) {
+            candidateComponents.replace(similarComponent, countSimilar.intValue() + 1);
+          } else {
+            candidateComponents.put(similarComponent, 1);
+          }
         }
       }
       return countFilesOnComponent.intValue()+1;
