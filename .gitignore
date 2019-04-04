@@ -24,7 +24,8 @@ hs_err_pid*
 
 results/
 
-predictors/input/*
-predictors/output/*
+predictors2/input/*
+predictors2/output/*
 build/
+r_scripts2/input/*
 
