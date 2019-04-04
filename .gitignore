@@ -28,4 +28,5 @@ predictors2/input/*
 predictors2/output/*
 build/
 r_scripts2/input/*
+mining_git/Results/*
 
