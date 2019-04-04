@@ -2,21 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc89f05b-d824-4ad0-93e0-2c8d4139c33e" name="Default" comment="Criando estrutura para o extrator que utiliza nomes.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/extratorJava2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/extratorJava2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/componentWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/componentWords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors" beforeDir="false" afterPath="$PROJECT_DIR$/predictors" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors/MainAnalysisProjects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/MainAnalysisProjects.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r_scripts" beforeDir="false" afterPath="$PROJECT_DIR$/r_scripts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r_scripts/input/allProjects_AllVariables.csv" beforeDir="false" afterPath="$PROJECT_DIR$/r_scripts/input/allProjects_AllVariables.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r_scripts/r_multipleLogReg_Analysis.R" beforeDir="false" afterPath="$PROJECT_DIR$/r_scripts/r_multipleLogReg_Analysis.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/extractors/StemProjectClusterizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/extractors/StemProjectClusterizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/componentWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/componentWords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/META-INF/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/.~lock.AntennaPod_MergeScenarioList.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/FileDownloader_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/NucleusApp_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/andors-trail_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/budget-watch_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/crowdbikemobileAS_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_2/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_3/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/allMerges_4/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/componentWords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/projects.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/Summary_ExcludedProjectsFromRandomSample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/andors-trail_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_2/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_3/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/AntennaPod_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/Etar-Calendar_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/ExoPlayer_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/FastHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/NewPipe_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/PocketHub_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/Summary_MergesByProject.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/Timber_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/TweetLanes_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/fdroidclient_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/gnucash-android_MergeScenarioList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/randomizedMerges_4/projectList.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/stemm.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/stopWords.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -26,6 +139,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -71,72 +187,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/Etar-Calendar_Packages.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/ExoPlayer.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges/AntennaPod_components.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/StemProjectClusterizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ProjectClusterizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-246">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="303">
+              <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="238">
+                <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/extrator/PropertiesUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -146,10 +226,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/componentWords.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/extrator/SelectSampleRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorConstants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -157,10 +255,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stopWords.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/projects.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -221,7 +329,6 @@
         <option value="$PROJECT_DIR$/src/main/java/extrator/ExtractorConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/resources/stemm.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/MainTeste.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorConstants.java" />
         <option value="$PROJECT_DIR$/results/component_name_randomizedMerges_2/AntennaPod_components.csv" />
@@ -233,14 +340,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/componentWords.txt" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/StemProjectClusterizer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1389" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -264,68 +373,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extratorJava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="extrator" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="extratorJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542115883313" />
     <property name="extract.method.default.visibility" value="protected" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/AntennaPod_components.csv" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42050692" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/AntennaPod_components.csv" />
   </component>
   <component name="RecentsManager">
@@ -492,6 +596,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -588,6 +693,9 @@
       <workItem from="1550495230628" duration="118000" />
       <workItem from="1550496117070" duration="360000" />
       <workItem from="1550519535152" duration="794000" />
+      <workItem from="1554299973183" duration="1518000" />
+      <workItem from="1554302093813" duration="1805000" />
+      <workItem from="1554387051129" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="Criando estrutura para o extrator que utiliza nomes.">
       <created>1538939294554</created>
@@ -614,13 +722,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140993000" />
+    <option name="totallyTimeSpent" value="144415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967213" visible="true" weight="0.33963692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967213" visible="true" weight="0.35786632" />
       <window_info id="Structure" order="1" sideWeight="0.5032787" side_tool="true" weight="0.301059" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -634,10 +742,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4996624" visible="true" weight="0.3270073" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003376" side_tool="true" weight="0.3270073" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3270073" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -691,6 +799,11 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/predictors" />
+      <path value="$PROJECT_DIR$/predictors/localProject" />
+      <path value="$PROJECT_DIR$/r_scripts" />
+    </ignored-roots>
     <MESSAGE value="Criando estrutura para o extrator que utiliza nomes." />
     <MESSAGE value="Extrator que usa nomes implementado. Usando clusterizacao por nome de arquivo." />
     <MESSAGE value="Extrator parcialmente funcionando. Falta refatorar o Clusterizer para permitir a clusterizacao de novos arquivos." />
@@ -713,13 +826,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/build.gradle</url>
-          <line>52</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/build.gradle</url>
-          <line>90</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -815,75 +928,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/predictors/projectsList">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ ExoPlayer_Packages.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ FastHub_Packages.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="1205" column="18" selection-start-line="1205" selection-start-column="18" selection-end-line="1205" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Etar-Calendar.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Etar-Calendar_Packages.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/android_MergeScenarioList.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/andors-trail_MergeScenarioList.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ NewPipe.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Timber.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_simple_randomizedMerges/ FastHub_components.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/FastHub_components.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Timber_Packages.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/android_MergeScenarioList.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/allMerges/andors-trail_MergeScenarioList.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ NewPipe.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Timber.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_simple_randomizedMerges/ FastHub_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/FastHub_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_simple_randomizedMerges/ Timber_Packages.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -898,16 +949,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_simple_randomizedMerges_4/android_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/android_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/component_simple_randomizedMerges_4/android_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/android_components.csv" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -928,35 +971,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/AntennaPod_components.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-85">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/PocketHub_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/Timber_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/TweetLanes_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/android_components.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges_2/android.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_2/AntennaPod_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/PocketHub_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/Timber_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_name_randomizedMerges_4/TweetLanes_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/android_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges_2/android.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -964,18 +984,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/AntennaPod_components.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/Etar-Calendar_components.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/AntennaPod_components.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges_2/Etar-Calendar_components.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/SimpleStringComponentExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -990,21 +1000,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_name_randomizedMerges_2/android_Packages.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_name_randomizedMerges_2/android.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-244" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/componentWords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/metrics_name_randomizedMerges_2/android_Packages.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_name_randomizedMerges_2/android.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1021,60 +1018,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/android_Packages.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/android.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/AntennaPod.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/AntennaPod_Packages.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/Etar-Calendar.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/Etar-Calendar_Packages.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/ExoPlayer.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges/AntennaPod_components.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/android_Packages.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/android.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/AntennaPod.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/AntennaPod_Packages.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/Etar-Calendar.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/Etar-Calendar_Packages.csv" />
+    <entry file="file://$PROJECT_DIR$/results/metrics_stemm_randomizedMerges/ExoPlayer.csv" />
+    <entry file="file://$PROJECT_DIR$/results/component_stemm_randomizedMerges/AntennaPod_components.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/MergeScenarioReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1088,16 +1043,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ProjectClusterizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="2822">
           <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1107,15 +1055,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extrator/ExtractorRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="1224">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+    <entry file="file://$PROJECT_DIR$/sample.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1123,6 +1077,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/componentWords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/SelectSampleRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/ExtractorConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stopWords.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/projects.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1137,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3202765" />
+                <option value="0.42050692" />
               </list>
             </option>
           </splitter-proportions>
@@ -1147,7 +1149,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3202765" />
+                <option value="0.42050692" />
               </list>
             </option>
           </splitter-proportions>
@@ -1159,7 +1161,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3202765" />
+                <option value="0.42050692" />
               </list>
             </option>
           </splitter-proportions>
@@ -1171,7 +1173,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3202765" />
+                <option value="0.42050692" />
               </list>
             </option>
           </splitter-proportions>
@@ -1179,11 +1181,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>extratorJava_main|extratorJava</last-edited>
+          <last-edited>extratorJava2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.42050692" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

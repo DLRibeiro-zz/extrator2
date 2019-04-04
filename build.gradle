@@ -34,8 +34,6 @@ dependencies {
 apply plugin: "com.github.jruby-gradle.base"
 apply plugin: 'application'
 
-import com.github.jrubygradle.JRubyExec
-
 //ARQUIVOS
 task cleanPredictorsInput(type : Delete){
     delete "${project.projectDir.toString().replace("\\","/")}/predictors/input/"
@@ -88,9 +86,9 @@ def readFile(){
 
 //SCRIPTS RUBY
 
-task buildPredictor(type: JRubyExec){
-        script "${project.projectDir.toString().replace("\\", "/")}/predictors/MainAnalysisProjects.rb"
-}
+//task buildPredictor(type: JRubyExec){
+//        script "${project.projectDir.toString().replace("\\", "/")}/predictors/MainAnalysisProjects.rb"
+//}
 
 task prepareForRscript(){
     doLast {

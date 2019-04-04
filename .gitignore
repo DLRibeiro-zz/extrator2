@@ -24,9 +24,9 @@ hs_err_pid*
 
 results/
 
-predictors2/input/*
-predictors2/output/*
+predictors/input/*
+predictors/output/*
 build/
-r_scripts2/input/*
+r_scripts/input/*
 mining_git/Results/*
 
