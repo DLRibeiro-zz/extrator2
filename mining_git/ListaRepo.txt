@@ -1,0 +1,38 @@
+﻿https://github.com/owncloud/android
+https://github.com/chrislacy/TweetLanes
+https://github.com/cSploit/android
+https://github.com/xsoh/Etar-Calendar
+https://github.com/AntennaPod/AntennaPod
+https://github.com/pockethub/PocketHub
+https://github.com/lingochamp/FileDownloader
+https://github.com/f-droid/fdroidclient
+https://github.com/brarcher/budget-watch
+https://github.com/Zukero/andors-trail
+https://github.com/ines-escin/smartparking
+https://github.com/ines-escin/NucleusApp
+https://github.com/ines-escin/crowdbikemobileAS
+
+AntennaPod, andors-trail, android, Etar-Calendar, NewPipe, PocketHub, Timber, TweetLanes
+"owncloud/android"
+"chrislacy/TweetLanes"
+"xsoh/Etar-Calendar"
+"AntennaPod/AntennaPod"
+"pockethub/PocketHub"
+"f-droid/fdroidclient"
+"Zukero/andors-trail"
+"naman14/Timber"
+"TeamNewPipe/NewPipe"
+"google/ExoPlayer" 
+
+"brarcher/budget-watch"
+"lingochamp/FileDownloader"
+"ines-escin/NucleusApp"
+"ines-escin/crowdbikemobileAS"
+
+Bike cidad�o
+Smart Parking
+Nucleus 
+
+Components of Android
+
+Activities, Services, Broadcast recievers, Content Providers, Fragments, IntentServices, Adapters, Tasks.
