@@ -65,7 +65,7 @@ public class ProjectClusterizer {
   protected void getFilesAndPossibleComponents(File[] allFiles,
       Map<String, List<String>> mapFilePossibleComponents) {
     for (File fileOrDir : allFiles) {
-      mapFilePossibleComponents.putAll(this.getJavaFiles(fileOrDir));
+      mapFilePossibleComponents.putAll(this.getJavaKotlinFiles(fileOrDir));
     }
   }
 
@@ -142,7 +142,7 @@ public class ProjectClusterizer {
   }
 
 
-  private Map<String, List<String>> getJavaFiles(File file) {
+  private Map<String, List<String>> getJavaKotlinFiles(File file) {
     Map<String, List<String>> javaFileNames = new HashMap<>();
     if (file.isDirectory()) {
       File[] subFiles = file.listFiles();
@@ -150,7 +150,7 @@ public class ProjectClusterizer {
       return javaFileNames;
     } else {
       String fileName = FilenameUtils.getName(file.getAbsolutePath());
-      if (fileName.contains(".java")) {
+      if (fileName.contains(".java") || fileName.contains(".kt")) {
         this.getPossibleComponentsFromFile(javaFileNames, fileName);
         return javaFileNames;
       }
@@ -160,7 +160,7 @@ public class ProjectClusterizer {
 
   private void getPossibleComponentsFromFile(Map<String, List<String>> javaFileNames,
       String fileName) {
-    String fileNameNoExtension = fileName.replace(".java", "");
+    String fileNameNoExtension = fileName.replace(".java", "").replace(".kt", "");
     String cleanFileName = this.cleanNameStopwordsComponentWords(fileNameNoExtension);
     List<String> componentsCandidates = Arrays
         .asList(StringUtils.splitByCharacterTypeCamelCase(cleanFileName));

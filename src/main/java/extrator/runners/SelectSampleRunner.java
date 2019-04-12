@@ -1,4 +1,4 @@
-package extrator;
+package extrator.runners;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
@@ -59,9 +59,9 @@ public class SelectSampleRunner implements Runnable {
           mergeScenarios.add(mergeScenario);
         }
         List<MergeScenario> conflictingScenarios = this
-            .sampleMergeScenearions(true, sampleConflictCommits, mergeScenarios);
+            .sampleMergeScenarios(true, sampleConflictCommits, mergeScenarios);
         List<MergeScenario> nonConflictingScenarios = this
-            .sampleMergeScenearions(false, sampleNoConflictsCommits, mergeScenarios);
+            .sampleMergeScenarios(false, sampleNoConflictsCommits, mergeScenarios);
 
         samplesMergeScenarios.addAll(conflictingScenarios);
         samplesMergeScenarios.addAll(nonConflictingScenarios);
@@ -73,8 +73,8 @@ public class SelectSampleRunner implements Runnable {
     }
   }
 
-  private List<MergeScenario> sampleMergeScenearions(boolean isConflicting, int quantity,
-      List<MergeScenario> mergeScenarios) {
+  private List<MergeScenario> sampleMergeScenarios(boolean isConflicting, int quantity,
+                                                   List<MergeScenario> mergeScenarios) {
     List<MergeScenario> sampleMergeScenario = new ArrayList<>();
     Random random = new Random();
     int counter = 0;

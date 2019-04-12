@@ -1,14 +1,14 @@
-package extrator;
+package extrator.runners;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
+import extrator.ComponentMetrics;
+import extrator.MergeScenarioReader;
+import extrator.PropertiesUtil;
 import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;
-import extrator.extractors.Extractor;
-import extrator.extractors.ExtractorConstants;
-import extrator.extractors.ExtractorFactory;
-import extrator.extractors.NameComponentExtractor;
-import extrator.extractors.SimpleStringComponentExtractor;
+import extrator.extractors.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

@@ -111,7 +111,7 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
 
   @Override
   protected List<String> getCleanJavaFiles(String fileList) {
-    List<String> javaFiles = this.getJavaFiles(fileList);
+    List<String> javaFiles = this.getJavaKotlinFiles(fileList);
     List<String> cleanJavaFiles = new ArrayList<>();
     for (String javaFile : javaFiles) {
       String cleanJavaFile = FilenameUtils.getName(javaFile.replace(".java", ""));

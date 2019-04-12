@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/extratorJava2.iml" filepath="$PROJECT_DIR$/.idea/extratorJava2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mining_git.iml" filepath="$PROJECT_DIR$/.idea/modules/mining_git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/predictors.iml" filepath="$PROJECT_DIR$/.idea/modules/predictors.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package extrator;
+package extrator.extractors;
 
 import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;

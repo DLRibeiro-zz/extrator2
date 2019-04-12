@@ -6,7 +6,7 @@ require 'date'
 class GitProject
 
 	def initialize(project, localClone, login, password)
-			@projetcName = project
+			@projectName = project
 			@localClone = localClone
 			@path = cloneProjectLocally(project, localClone)
 			@login = login
@@ -32,7 +32,7 @@ class GitProject
 	end
 
 	def getProjectName()
-		@projetcName
+		@projectName
 	end
 
 	def getMergeScenarios()

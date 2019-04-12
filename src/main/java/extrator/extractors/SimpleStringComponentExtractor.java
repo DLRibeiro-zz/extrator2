@@ -60,7 +60,7 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
   }
 
   protected List<String> extractComponentsFromNonJava(String fileList){
-    List<String> nonJavaFiles = this.getNonJavaFiles(fileList);
+    List<String> nonJavaFiles = this.getNonJavaKotlinFiles(fileList);
     List<String> components = new ArrayList<>();
     if(!nonJavaFiles.isEmpty()){
       components.add("RESOURCE");
@@ -69,7 +69,7 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
   }
 
   protected List<String> getCleanJavaFiles(String fileList) {
-    List<String> javaFiles = this.getJavaFiles(fileList);
+    List<String> javaFiles = this.getJavaKotlinFiles(fileList);
     for (int i = 0; i < javaFiles.size(); i++) {
       String javaFile = javaFiles.get(i);
       javaFile = this.cleanForStopWord(javaFile);
@@ -78,22 +78,22 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
     return javaFiles;
   }
 
-  protected List<String> getNonJavaFiles(String fileList){
+  protected List<String> getNonJavaKotlinFiles(String fileList){
     List<String> nonJavaFiles = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]","").trim().split("@");
     for(String file: allFiles){
-      if(!file.endsWith(".java")){
+      if(!file.endsWith(".java") && !file.endsWith(".kt")){
         nonJavaFiles.add(file);
       }
     }
     return nonJavaFiles;
   }
 
-  protected List<String> getJavaFiles(String fileList) {
+  protected List<String> getJavaKotlinFiles(String fileList) {
     List<String> javaFiles = new ArrayList<>();
     String[] allFiles = fileList.replace("[", "").replace("]", "").trim().split("@");
     for (String file : allFiles) {
-      if (file.endsWith(".java")) {
+      if (file.endsWith(".java") || file.endsWith(".kt")) {
         javaFiles.add(file);
       }
     }
