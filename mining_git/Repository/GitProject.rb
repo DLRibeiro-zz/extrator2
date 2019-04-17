@@ -5,6 +5,7 @@ class GitProject
 
 	def initialize(project, localPath, pathResults)
 		@projetcName = project.split("/")[1].gsub("\"","")
+		@projectFullName = project.gsub("/","_")
 		@pathClone = cloneProjectLocally(project, localPath)
 		@mergeScenarios = Array.new
 		getMergesScenariosByProject(localPath, pathResults)
@@ -21,6 +22,10 @@ class GitProject
 
 	def getMergeScenarios()
 		@mergeScenarios
+	end
+
+	def getProjectFullName()
+		@projectFullName
 	end
 
 	

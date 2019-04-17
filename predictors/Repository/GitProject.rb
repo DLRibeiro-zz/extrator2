@@ -64,7 +64,8 @@ class GitProject
 
 	def formatProjectName(projectName)
 	  #return projectName[0..projectName.index('/')-1]
-		return projectName[projectName.index('/')+1..projectName.length]
+		return projectName.gsub("/","_")
+		# return projectName[projectName.index('/')+1..projectName.length]
 	end
 	
 	# Number of commits

@@ -74,10 +74,11 @@ class MainAnalysisProjects
 		@projectsList.each do |project|
 			printProjectInformation(index, project)
 			mainGitProject = GitProject.new(project, getLocalPath, @pathResultsAllMerges)
-			projectName = mainGitProject.getProjectName()
+			# projectName = mainGitProject.getProjectName()
+			projectName = mainGitProject.getProjectFullName()
 			puts "projectName = #{projectName}"		#debugging...
 			allMerges = mainGitProject.generateMergeScenarioList(projectName,getLocalPath, getPathResultsAllMerges)
-			mainGitProject.	generateRandomizedMergeScenarioList(projectName, getLocalPath, getPathResultsRandomizedMerges, allMerges, getMinTotalMerges, getSampleSize)
+			mainGitProject.generateRandomizedMergeScenarioList(projectName, getLocalPath, getPathResultsRandomizedMerges, allMerges, getMinTotalMerges, getSampleSize)
 
 			index += 1
 		end

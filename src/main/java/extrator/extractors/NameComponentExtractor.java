@@ -3,6 +3,9 @@ package extrator.extractors;
 import extrator.PropertiesUtil;
 import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;
+
+import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,6 +13,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.filefilter.HiddenFileFilter;
 
 public class NameComponentExtractor extends SimpleStringComponentExtractor implements
     Extractor<MergeScenario> {
@@ -48,16 +52,49 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
     this.currentProjectPosition = 0;
   }
 
+  /**
+   * Creates a list of project paths from a base project path
+   * @param projectPaths
+   * @return The {@link List} of project paths
+   */
   private List<String> generateProjectPaths(String projectPaths) {
+    File baseFolder = new File(projectPaths);
+    File[] underFolders = baseFolder.listFiles();
     List<String> listProjectPaths = new ArrayList<>();
-    String[] arrayProjectPaths = projectPaths.replace("[", "").replace("]", "").split("\\|");
-    for (String projectPath : arrayProjectPaths) {
-      String trimmedProjectPath = projectPath.trim();
-      if (!trimmedProjectPath.equals("")) {
-        listProjectPaths.add(trimmedProjectPath);
+    this.searchGitRepos(baseFolder, listProjectPaths);
+//    String[] arrayProjectPaths = projectPaths.replace("[", "").replace("]", "").split("\\|");
+//    for (String projectPath : arrayProjectPaths) {
+//      String trimmedProjectPath = projectPath.trim();
+//      if (!trimmedProjectPath.equals("")) {
+//        listProjectPaths.add(trimmedProjectPath);
+//      }
+//    }
+    return listProjectPaths;
+  }
+
+  private boolean isGitRepository(File folder){
+    boolean isGitRepo = false;
+    File[] hiddenFiles = folder.listFiles((FileFilter) HiddenFileFilter.HIDDEN);
+    for(File file: hiddenFiles){
+      if(file.getName().equals(".git")){
+        isGitRepo = true;
       }
     }
-    return listProjectPaths;
+    return isGitRepo;
+  }
+
+  private void searchGitRepos(File baseFolder, List<String> projectPaths){
+     File[] folders = baseFolder.listFiles();
+     for(File folder : folders){
+       if(!folder.isDirectory()){
+         continue;
+       }
+       if(this.isGitRepository(folder)){
+         projectPaths.add(folder.getAbsolutePath());
+       }else{
+         this.searchGitRepos(folder, projectPaths);
+       }
+     }
   }
 
   @Override

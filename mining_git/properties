@@ -2,5 +2,5 @@ login=<DLRibeiro>
 password=<Bl@d3150396>
 pathResultsAllMerges=</Results/allMerges/>
 pathResultsRandomizedMerges=</Results/randomizedMerges/>
-minTotalMerges=<50>
+minTotalMerges=<30>
 sampleSize=<30>
