@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff137909-1dd9-4639-a002-4fad84ba72d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining_git/MainAnalysisProjects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mining_git/MainAnalysisProjects.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining_git/Repository/GitProject.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mining_git/Repository/GitProject.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining_git/properties" beforeDir="false" afterPath="$PROJECT_DIR$/mining_git/properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors/properties" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining_git/projectsList" beforeDir="false" afterPath="$PROJECT_DIR$/mining_git/projectsList" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining_git/Repository/GitProject.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
+            <state relative-caret-position="119">
               <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
@@ -41,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mining_git/MainAnalysisProjects.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="1309">
               <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
             </state>
           </provider>
@@ -50,20 +45,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+            <state relative-caret-position="2176">
+              <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="70" selection-end-column="7" />
+            <state relative-caret-position="799">
+              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
               <folding>
+                <element signature="e#5412#5413#0" expanded="true" />
                 <element signature="e#5440#5441#0" expanded="true" />
+                <element signature="e#5504#5505#0" expanded="true" />
                 <element signature="e#5544#5545#0" expanded="true" />
+                <element signature="e#5587#5588#0" expanded="true" />
                 <element signature="e#5616#5617#0" expanded="true" />
               </folding>
             </state>
@@ -78,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predictors/MainAnalysisProjects.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-688">
+            <state relative-caret-position="1088">
               <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
             </state>
           </provider>
@@ -98,11 +96,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mining_git/projectsList">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="217">
+              <caret line="173" column="18" lean-forward="true" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -125,7 +123,12 @@
       <find>getLocalPath</find>
       <find>formatProject</find>
       <find>cloneProjectLocally</find>
+      <find>,</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>\n</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +144,7 @@
         <option value="$PROJECT_DIR$/predictors/properties" />
         <option value="$PROJECT_DIR$/predictors/Repository/GitProject.rb" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" />
+        <option value="$PROJECT_DIR$/mining_git/projectsList" />
       </list>
     </option>
   </component>
@@ -156,7 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,48 +171,13 @@
             <path>
               <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
               <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="r_scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="extrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="extrator2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="extrator2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="extrator" type="462c0819:PsiDirectoryNode" />
-              <item name="extractors" type="462c0819:PsiDirectoryNode" />
+              <item name="mining_git" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,12 +222,14 @@
       <workItem from="1554985982114" duration="5714000" />
       <workItem from="1555073548112" duration="839000" />
       <workItem from="1555075870588" duration="4001000" />
-      <workItem from="1555507343271" duration="6379000" />
+      <workItem from="1555507343271" duration="7601000" />
+      <workItem from="1556027612814" duration="941000" />
+      <workItem from="1556028650365" duration="288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20136000" />
+    <option name="totallyTimeSpent" value="22587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,9 +242,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2633356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -286,11 +256,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996624" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49831194" visible="true" weight="0.33040935" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4996624" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003376" side_tool="true" visible="true" weight="0.329927" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50168806" side_tool="true" visible="true" weight="0.33040935" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4996624" visible="true" weight="0.329927" />
@@ -414,37 +384,55 @@
     <entry file="file://$PROJECT_DIR$/mining_git/Repository/MergeScenario.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mining_git/projectsList">
+    <entry file="file://$PROJECT_DIR$/r_scripts/r_multipleLogReg_Analysis.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mining_git/properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="-1530">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining_git/Repository/GitProject.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
+        <state relative-caret-position="119">
           <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mining_git/MainAnalysisProjects.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="1309">
           <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="e#5412#5413#0" expanded="true" />
+            <element signature="e#5440#5441#0" expanded="true" />
+            <element signature="e#5504#5505#0" expanded="true" />
+            <element signature="e#5544#5545#0" expanded="true" />
+            <element signature="e#5587#5588#0" expanded="true" />
+            <element signature="e#5616#5617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/projectsList">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/predictors/MainAnalysisProjects.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-688">
+        <state relative-caret-position="1088">
           <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
         </state>
       </provider>
@@ -456,35 +444,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predictors/projectsList">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/predictors/Repository/MergeCommitParents.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/r_scripts/r_multipleLogReg_Analysis.R">
+    <entry file="file://$PROJECT_DIR$/mining_git/properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
+    <entry file="file://$PROJECT_DIR$/mining_git/projectsList">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="70" selection-end-column="7" />
-          <folding>
-            <element signature="e#5440#5441#0" expanded="true" />
-            <element signature="e#5544#5545#0" expanded="true" />
-            <element signature="e#5616#5617#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="217">
+          <caret line="173" column="18" lean-forward="true" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
         </state>
       </provider>
     </entry>
