@@ -20,6 +20,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.logging.SocketHandler;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
@@ -56,7 +58,9 @@ public class ExtractorRunner implements Runnable {
         index++;
       }
       index = 0;
+      System.out.println("Going to extract now");
       for (String csvFile : csvFileNames) {
+        System.out.println("Looking for :" + csvFile);
         InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(csvFile);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         Reader reader = inputStreamReader;
