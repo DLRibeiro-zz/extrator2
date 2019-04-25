@@ -67,7 +67,7 @@ class MainAnalysisProjects
 		@projectsList.each do |project|
 			printProjectInformation(index, project)
 			mainGitProject = GitProject.new(project, getLocalCLone(), getLoginUser(), getPasswordUser())
-				projectName = mainGitProject.getProjectName()
+				projectName = mainGitProject.getProjectFullName()
 				puts "projectName = #{projectName}"		#debugging... 
 			 	mainGitProject.generateCommitsNumberByMergeScenario(projectName, getLocalCLone(), getPathInput, getPathOutput)
 				mainGitProject.generateAuthorsNumberByMergeScenario(projectName, getLocalCLone(), getPathOutput)

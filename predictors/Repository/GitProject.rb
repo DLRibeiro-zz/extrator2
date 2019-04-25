@@ -7,6 +7,7 @@ class GitProject
 
 	def initialize(project, localClone, login, password)
 			@projectName = project
+			@projectFullName = project.gsub("/","_")
 			@localClone = localClone
 			@path = cloneProjectLocally(project, localClone)
 			@login = login
@@ -41,6 +42,10 @@ class GitProject
 
 	def getMergeCommitParents()
 		@mergeCommitParents
+	end
+
+	def getProjectFullName()
+		@projectFullName
 	end
 
 	def cloneProjectLocally(project, localClone)

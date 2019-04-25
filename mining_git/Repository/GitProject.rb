@@ -4,7 +4,7 @@ require_all './Repository'
 class GitProject
 
 	def initialize(project, localPath, pathResults)
-		@projetcName = project.split("/")[1].gsub("\"","")
+		@projectName = project.split("/")[1].gsub("\"", "")
 		@projectFullName = project.gsub("/","_")
 		@pathClone = cloneProjectLocally(project, localPath)
 		@mergeScenarios = Array.new
@@ -17,7 +17,7 @@ class GitProject
 	end
 
 	def getProjectName()
-		@projetcName
+		@projectName
 	end
 
 	def getMergeScenarios()
