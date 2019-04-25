@@ -115,7 +115,7 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
   }
 
   protected List<String> extractComponentsFromFileList(String fileList) {
-    List<String> javaFiles = getCleanJavaFiles(fileList);
+    List<String> javaFiles = getCleanJavaKotlinFiles(fileList);
     List<String> components = new ArrayList<>();
     for (String javaFile : javaFiles) {
       String component = this.extractComponent(javaFile);
@@ -135,7 +135,7 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
     return components;
   }
 
-  protected List<String> getCleanJavaFiles(String fileList) {
+  protected List<String> getCleanJavaKotlinFiles(String fileList) {
     List<String> javaFiles = this.getJavaKotlinFiles(fileList);
     for (int i = 0; i < javaFiles.size(); i++) {
       String javaFile = javaFiles.get(i);

@@ -100,7 +100,7 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
   @Override
   protected List<String> extractComponentsFromFileList(String fileList) {
     Set<String> selectedComponents = new HashSet<>();
-    List<String> javaFiles = getCleanJavaFiles(fileList);
+    List<String> javaFiles = this.getCleanJavaKotlinFiles(fileList);
 
     for (String javaFile : javaFiles) {
       try {
@@ -146,13 +146,13 @@ public class NameComponentExtractor extends SimpleStringComponentExtractor imple
     return cleanFileName;
   }
 
-  @Override
-  protected List<String> getCleanJavaFiles(String fileList) {
+
+  protected List<String> getCleanJavaKotlinFiles(String fileList) {
     List<String> javaFiles = this.getJavaKotlinFiles(fileList);
     List<String> cleanJavaFiles = new ArrayList<>();
     for (String javaFile : javaFiles) {
-      String cleanJavaFile = FilenameUtils.getName(javaFile.replace(".java", ""));
-      cleanJavaFiles.add(cleanJavaFile);
+      String cleanJavaKotlinFile = FilenameUtils.getName(javaFile.replace(".java", "").replace(".kt",""));
+      cleanJavaFiles.add(cleanJavaKotlinFile);
     }
     return cleanJavaFiles;
   }
