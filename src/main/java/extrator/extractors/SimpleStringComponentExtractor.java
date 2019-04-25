@@ -101,7 +101,7 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
 
   @Override
   public List<String> getProjectPaths() {
-    return null;
+    return this.projectPaths;
   }
 
   protected int checkCommonSlices(List<String> left, List<String> right) {
