@@ -1,16 +1,25 @@
 package extrator.extractors;
 
 import extrator.ComponentMetrics;
+import extrator.PropertiesUtil;
 import extrator.entities.MergeScenario;
 import extrator.entities.Metrics;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
+
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.filefilter.HiddenFileFilter;
 
 public class SimpleStringComponentExtractor implements Extractor<MergeScenario> {
 
   protected List<String> excludedWords;
   protected List<String> componentWords;
+  private List<String> projectPaths;
 
   public SimpleStringComponentExtractor(){
 
@@ -19,6 +28,59 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
   public SimpleStringComponentExtractor(List<String> componentWords, List<String> excludedWords) {
     this.excludedWords = excludedWords;
     this.componentWords = componentWords;
+    Properties properties = new Properties();
+    try {
+      PropertiesUtil.loadProperties(properties);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    String projectPaths = properties.getProperty(ExtractorConstants.PROJECT_PATH_PROPERTY);
+    this.projectPaths = this.generateProjectPaths(projectPaths);
+  }
+
+  /**
+   * Creates a list of project paths from a base project path
+   * @param projectPaths
+   * @return The {@link List} of project paths
+   */
+  private List<String> generateProjectPaths(String projectPaths) {
+    File baseFolder = new File(projectPaths);
+    File[] underFolders = baseFolder.listFiles();
+    List<String> listProjectPaths = new ArrayList<>();
+    this.searchGitRepos(baseFolder, listProjectPaths);
+//    String[] arrayProjectPaths = projectPaths.replace("[", "").replace("]", "").split("\\|");
+//    for (String projectPath : arrayProjectPaths) {
+//      String trimmedProjectPath = projectPath.trim();
+//      if (!trimmedProjectPath.equals("")) {
+//        listProjectPaths.add(trimmedProjectPath);
+//      }
+//    }
+    return listProjectPaths;
+  }
+
+  private boolean isGitRepository(File folder){
+    boolean isGitRepo = false;
+    File[] hiddenFiles = folder.listFiles((FileFilter) HiddenFileFilter.HIDDEN);
+    for(File file: hiddenFiles){
+      if(file.getName().equals(".git")){
+        isGitRepo = true;
+      }
+    }
+    return isGitRepo;
+  }
+
+  private void searchGitRepos(File baseFolder, List<String> projectPaths){
+    File[] folders = baseFolder.listFiles();
+    for(File folder : folders){
+      if(!folder.isDirectory()){
+        continue;
+      }
+      if(this.isGitRepository(folder)){
+        projectPaths.add(folder.getAbsolutePath());
+      }else{
+        this.searchGitRepos(folder, projectPaths);
+      }
+    }
   }
 
   @Override
@@ -35,6 +97,11 @@ public class SimpleStringComponentExtractor implements Extractor<MergeScenario> 
     metrics = new ComponentMetrics(mergeScenario.getMergeCommitId(),
         mergeScenario.isMergeConfliting(), existCommonSlices, commonSlicesCount, leftComponents, righComponents);
     return metrics;
+  }
+
+  @Override
+  public List<String> getProjectPaths() {
+    return null;
   }
 
   protected int checkCommonSlices(List<String> left, List<String> right) {

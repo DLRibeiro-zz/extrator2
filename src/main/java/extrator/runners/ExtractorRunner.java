@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 
 public class ExtractorRunner implements Runnable {
 
@@ -40,13 +41,15 @@ public class ExtractorRunner implements Runnable {
     this.packageExtractor = new PackageExtractor();
     try {
       loadAndBuildExtractor(properties);
-      String[] repoNames = properties.getProperty("repos").split(",");
-      String[] csvFilesPaths = new String[repoNames.length];
+
+      List<String> repoPaths = this.componentExtractor.getProjectPaths();
+      List<String> repoNames = this.getRepoNames(repoPaths);
+      String[] csvFilesPaths = new String[repoNames.size()];
 
       int index = 0;
       List<String> csvFileNames = new ArrayList<>();
       for (String csvFileName : csvFilesPaths) {
-        String fileName = properties.get("folder") + "/" + (repoNames[index].replace("\"", "").trim())
+        String fileName = properties.get("folder") + "/" + (repoNames.get(index).replace("\"", "").trim())
                 + "_MergeScenarioList.csv";
         csvFileNames.add(fileName);
         System.out.println(fileName);
@@ -68,15 +71,15 @@ public class ExtractorRunner implements Runnable {
           MergeScenario mergeScenario = new MergeScenario(ms[0], Boolean.parseBoolean(ms[1]), ms[2],
               ms[3], ms[4], ms[5], ms[6], ms[7], Integer.parseInt(ms[8]));
           Metrics mergeScenarioComponentMetrics = this.componentExtractor.extract(mergeScenario);
-          Metrics mergeScenearioPackageMetrics = this.packageExtractor.extract(mergeScenario);
+          Metrics mergeScenarioPackageMetrics = this.packageExtractor.extract(mergeScenario);
           componentMetrics.add(mergeScenarioComponentMetrics);
-          packageMetrics.add(mergeScenearioPackageMetrics);
+          packageMetrics.add(mergeScenarioPackageMetrics);
         }if( this.componentExtractor instanceof NameComponentExtractor){
           System.out.println("Change project");
           NameComponentExtractor nameComponentExtractor = (NameComponentExtractor) this.componentExtractor;
           nameComponentExtractor.changeProjectClusterizer();
         }
-        String repoName = repoNames[index].replace("\"","");
+        String repoName = repoNames.get(index);
         String metricsFolder =  properties.getProperty(ExtractorConstants.METRICS_FOLDER);
         String extractorType = properties.getProperty(ExtractorConstants.EXTRACTOR_PROPERTY_NAME);
         String componentsFolder = properties.getProperty(ExtractorConstants.COMPONENTS_FOLDER);
@@ -96,6 +99,17 @@ public class ExtractorRunner implements Runnable {
     System.out.println("Loaded properties");
     this.componentExtractor = ExtractorFactory.createExtractor(properties.getProperty(ExtractorConstants.EXTRACTOR_PROPERTY_NAME));
     System.out.println("Build component extractor");
+  }
+
+  private List<String> getRepoNames(List<String> repoPaths){
+    List<String> repoNames = new ArrayList<>();
+    for(String repoPath: repoPaths){
+      String repoPathUnix = FilenameUtils.separatorsToUnix(repoPath.replace("\"", ""));
+      String[] pathSegments = repoPathUnix.split("/");
+      String repoName = pathSegments[pathSegments.length-2] + "_" + pathSegments[pathSegments.length-1];
+      repoNames.add(repoName);
+    }
+    return repoNames;
   }
 
   private void writeToComponentsToCsvFile(String folder, String repository, String extraName, List<Metrics> metrics)
