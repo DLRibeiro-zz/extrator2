@@ -10,6 +10,11 @@ import org.apache.commons.io.FilenameUtils;
 
 public class PackageExtractor implements Extractor<MergeScenario> {
 
+
+  public PackageExtractor(){
+
+  }
+
   @Override
   public Metrics extract(MergeScenario mergeScenario) {
     Metrics metrics = null;
@@ -27,6 +32,15 @@ public class PackageExtractor implements Extractor<MergeScenario> {
     boolean existCommonPackage = (commonPackageCount > 0) ? true : false;
     metrics = new Metrics(mergeScenario.getMergeCommitId(), mergeScenario.isMergeConfliting(), existCommonPackage, commonPackageCount);
     return metrics;
+  }
+
+  /**
+   * Not implemented yet TODO
+   * @return
+   */
+  @Override
+  public List<String> getProjectPaths() {
+    return null;
   }
 
   private List<String> getFiles(String fileList) {
