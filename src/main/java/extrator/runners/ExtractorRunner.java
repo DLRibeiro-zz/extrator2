@@ -41,15 +41,17 @@ public class ExtractorRunner implements Runnable {
     public void run() {
         Properties properties = new Properties();
         this.packageExtractor = new PackageExtractor();
-        List<String> repoPaths = this.componentExtractor.getProjectPaths();
-        List<String> repoNames = this.getRepoNames(repoPaths);
-        String[] csvFilesPaths = new String[repoNames.size()];
+        List<String> repoPaths;
+        List<String> repoNames;
+        String[] csvFilesPaths;
         try {
             loadAndBuildExtractor(properties);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
+        repoPaths = this.componentExtractor.getProjectPaths();
+        repoNames = this.getRepoNames(repoPaths);
+        csvFilesPaths = new String[repoNames.size()];
         int index = 0;
         List<String> csvFileNames = new ArrayList<>();
         for (String csvFileName : csvFilesPaths) {
