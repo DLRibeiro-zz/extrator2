@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff137909-1dd9-4639-a002-4fad84ba72d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mining_git/Repository/GitProject.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mining_git/Repository/GitProject.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors/MainAnalysisProjects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/MainAnalysisProjects.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/Repository/GitProject.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictors/projectsList" beforeDir="false" afterPath="$PROJECT_DIR$/predictors/projectsList" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="140">
+              <caret line="259" column="56" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -53,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predictors/projectsList">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="533">
@@ -173,9 +170,9 @@
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/NameComponentExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/extrator/extractors/SimpleStringComponentExtractor.java" />
         <option value="$PROJECT_DIR$/mining_git/Repository/GitProject.rb" />
-        <option value="$PROJECT_DIR$/predictors/Repository/GitProject.rb" />
         <option value="$PROJECT_DIR$/predictors/MainAnalysisProjects.rb" />
         <option value="$PROJECT_DIR$/predictors/projectsList" />
+        <option value="$PROJECT_DIR$/predictors/Repository/GitProject.rb" />
       </list>
     </option>
   </component>
@@ -273,12 +270,12 @@
       <workItem from="1555507343271" duration="7601000" />
       <workItem from="1556027612814" duration="941000" />
       <workItem from="1556028650365" duration="288000" />
-      <workItem from="1556028974004" duration="19482000" />
+      <workItem from="1556028974004" duration="20003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42069000" />
+    <option name="totallyTimeSpent" value="42590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,23 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predictors/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mining_git/Repository/GitProject.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -614,6 +594,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
           <caret line="300" selection-start-line="300" selection-end-line="300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="259" column="56" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
         </state>
       </provider>
     </entry>

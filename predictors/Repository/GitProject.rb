@@ -257,7 +257,7 @@ class GitProject
 					else
 						deltaIntegration = 0
 					end
-					
+					puts "DeltaIntegration is " + deltaIntegration
 					arithmeticMeanDelayIntegration = (Float(leftDelayIntegration + rightDelayIntegration)/2).round(2)
 					geometricMeanDelayIntegration =  Math.sqrt(Float(leftDelayIntegration*rightDelayIntegration)).round(2)				
 					
