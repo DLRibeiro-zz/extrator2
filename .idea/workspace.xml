@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="300" column="64" selection-start-line="300" selection-start-column="64" selection-end-line="300" selection-end-column="64" />
+              <caret line="303" column="13" lean-forward="true" selection-start-line="303" selection-start-column="13" selection-end-line="303" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -270,12 +270,12 @@
       <workItem from="1555507343271" duration="7601000" />
       <workItem from="1556027612814" duration="941000" />
       <workItem from="1556028650365" duration="288000" />
-      <workItem from="1556028974004" duration="20717000" />
+      <workItem from="1556028974004" duration="20795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43304000" />
+    <option name="totallyTimeSpent" value="43382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/predictors/Repository/GitProject.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="300" column="64" selection-start-line="300" selection-start-column="64" selection-end-line="300" selection-end-column="64" />
+          <caret line="303" column="13" lean-forward="true" selection-start-line="303" selection-start-column="13" selection-end-line="303" selection-end-column="13" />
         </state>
       </provider>
     </entry>

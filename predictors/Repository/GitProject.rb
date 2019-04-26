@@ -263,6 +263,7 @@ class GitProject
 							leftDelayIntegration = leftDelayIntegration * -1
 						else
 							rightDelayIntegration = rightDelayIntegration * -1
+						end
 					end
 					arithmeticMeanDelayIntegration = (Float(leftDelayIntegration + rightDelayIntegration)/2).round(2)
 					geometricMeanDelayIntegration =  Math.sqrt(Float(leftDelayIntegration*rightDelayIntegration)).round(2)				
