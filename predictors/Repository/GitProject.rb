@@ -257,8 +257,13 @@ class GitProject
 					else
 						deltaIntegration = 0
 					end
-					puts "DeltaIntegration is"
-					puts deltaIntegration
+
+					if leftDelayIntegration * rightDelayIntegration < 0
+						if leftDelayIntegration < 0
+							leftDelayIntegration = leftDelayIntegration * -1
+						else
+							rightDelayIntegration = rightDelayIntegration * -1
+					end
 					arithmeticMeanDelayIntegration = (Float(leftDelayIntegration + rightDelayIntegration)/2).round(2)
 					geometricMeanDelayIntegration =  Math.sqrt(Float(leftDelayIntegration*rightDelayIntegration)).round(2)				
 					
@@ -289,7 +294,13 @@ class GitProject
 					else
 						deltaIntegration = 0
 					end
-					
+					if leftDelayIntegration * rightDelayIntegration < 0
+						if leftDelayIntegration < 0
+							leftDelayIntegration = leftDelayIntegration * -1
+						else
+							rightDelayIntegration = rightDelayIntegration * -1
+						end
+					end
 					arithmeticMeanDelayIntegration = (Float(leftDelayIntegration + rightDelayIntegration)/2).round(2)
 					geometricMeanDelayIntegration =  Math.sqrt(Float(leftDelayIntegration*rightDelayIntegration)).round(2)				
 					
